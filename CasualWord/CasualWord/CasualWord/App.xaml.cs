@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CasualWord.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,8 +11,11 @@ namespace CasualWord
         public App()
         {
             InitializeComponent();
+#if DEBUG
+            HotReloader.Current.Start(this);
+#endif
 
-            MainPage = new MainPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()

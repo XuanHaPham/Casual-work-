@@ -5,6 +5,7 @@ using Android.Content.PM;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using ImageCircle.Forms.Plugin.Droid;
 using Android.OS;
 
 namespace CasualWord.Droid
@@ -19,6 +20,7 @@ namespace CasualWord.Droid
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            ImageCircleRenderer.Init();
             LoadApplication(new App());
         }
     }
