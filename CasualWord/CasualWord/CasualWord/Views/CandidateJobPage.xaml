@@ -9,7 +9,8 @@
              Icon="user.png"
              Title="Jobs">
     <ContentPage.Content>
-        <Grid>
+        <ScrollView>
+            <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="2*"/>
@@ -48,9 +49,43 @@
             </Grid>
             <tvs:TabViewControl Grid.Row="1" HeaderBackgroundColor="Transparent" HeaderSelectionUnderlineColor="DodgerBlue" HeaderTabTextColor="Black">
             <tvs:TabViewControl.ItemSource>
-                <tvs:TabItem HeaderText="Jobs">
-                    <Button Text="Go back to main page from first page" />
-                </tvs:TabItem>
+                    <tvs:TabItem HeaderText="Jobs">
+                        
+                        <ListView x:Name="listView"
+                          BackgroundColor="White"
+                          HasUnevenRows="True"
+                >
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+
+                                        <StackLayout Orientation="Horizontal" Padding="20">
+                                            <StackLayout VerticalOptions="CenterAndExpand" WidthRequest="60" HorizontalOptions="Center">
+                                                <Image Source="user.png" WidthRequest="40"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Label Text="Sunshine" HorizontalOptions="StartAndExpand" TextColor="Blue" FontSize="Large" />
+                                                    <Label Text="Sunshine" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand"  />
+                                                </StackLayout>
+                                                <Label Text="Requirements" HorizontalOptions="StartAndExpand" />
+
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Image Source="user.png" WidthRequest="40"/>
+                                                    <Label Text="09 Sept" HorizontalOptions="StartAndExpand" />
+
+                                                    <Image Source="user.png" WidthRequest="40"/>
+                                                    <Label Text="9:00-17:00" HorizontalOptions="EndAndExpand" />
+                                                </StackLayout>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+                        
+                    </tvs:TabItem>
                 <tvs:TabItem HeaderText="Upcoming">
                     <Button Text="Go back to main page from second page" />
                 </tvs:TabItem>
@@ -62,5 +97,6 @@
            
 
         </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
