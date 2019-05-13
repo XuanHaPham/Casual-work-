@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasualWord.Android", "Casua
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasualWord.iOS", "CasualWord\CasualWord.iOS\CasualWord.iOS.csproj", "{8D055274-7A44-445F-A645-8144DE85EE65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasualWord", "CasualWord\CasualWord\CasualWord.csproj", "{64E03943-6DB0-4692-9590-3E51C8B449A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasualWord", "CasualWord\CasualWord\CasualWord.csproj", "{64E03943-6DB0-4692-9590-3E51C8B449A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,9 +79,9 @@ Global
 		{8D055274-7A44-445F-A645-8144DE85EE65}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
 		{8D055274-7A44-445F-A645-8144DE85EE65}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
 		{8D055274-7A44-445F-A645-8144DE85EE65}.AppStore|iPhoneSimulator.Deploy.0 = AppStore|iPhoneSimulator
-		{8D055274-7A44-445F-A645-8144DE85EE65}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
-		{8D055274-7A44-445F-A645-8144DE85EE65}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
-		{8D055274-7A44-445F-A645-8144DE85EE65}.Debug|Any CPU.Deploy.0 = Debug|iPhoneSimulator
+		{8D055274-7A44-445F-A645-8144DE85EE65}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{8D055274-7A44-445F-A645-8144DE85EE65}.Debug|Any CPU.Build.0 = Debug|iPhone
+		{8D055274-7A44-445F-A645-8144DE85EE65}.Debug|Any CPU.Deploy.0 = Debug|iPhone
 		{8D055274-7A44-445F-A645-8144DE85EE65}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{8D055274-7A44-445F-A645-8144DE85EE65}.Debug|iPhone.Build.0 = Debug|iPhone
 		{8D055274-7A44-445F-A645-8144DE85EE65}.Debug|iPhone.Deploy.0 = Debug|iPhone
