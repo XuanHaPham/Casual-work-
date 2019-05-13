@@ -32,7 +32,9 @@
 
     <view:CandidateJobPage/>
 
-    <ContentPage 
+    <view:CandidateProfilePage/>
+
+    <!--<ContentPage 
 			 Title="This day">
         <ContentPage.Content>
             <StackLayout>
@@ -40,6 +42,8 @@
                 <Button Text="Upcoming Appointments"  VerticalOptions="CenterAndExpand" />
             </StackLayout>
         </ContentPage.Content>
-    </ContentPage>
+        
+        
+    </ContentPage>-->
 </TabbedPage>
  
