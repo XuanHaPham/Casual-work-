@@ -6,7 +6,7 @@
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              xmlns:fontAwesome="clr-namespace:FontAwesome"
              BackgroundColor="White"
-             Icon="{x:OnPlatform Android=user.png, iOS= user.png}"
+             Icon="{x:OnPlatform Android=news.png, iOS= news.png}"
              Title="NEW" 
              >
     <ContentPage.Content>
@@ -34,7 +34,7 @@
                 </Grid>
 
             </Grid>
-            <Grid Grid.Row="1">
+            <Grid Grid.Row="1" BackgroundColor="White">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
@@ -52,6 +52,7 @@
                         <ListView x:Name="listView"
                           BackgroundColor="White"
                           HasUnevenRows="True"
+                                  ItemSelected="ListView_ItemSelected"
                 >
                             <ListView.ItemTemplate>
                                 <DataTemplate>

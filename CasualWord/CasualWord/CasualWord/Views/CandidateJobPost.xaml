@@ -1,12 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CasualWord.Views.CandidateJobPost">
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:fontAwesome="clr-namespace:FontAwesome"
+             x:Class="CasualWord.Views.CandidateJobPost"
+             Title="Job"
+             >
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2.5*" />
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.9*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" BackgroundColor="DodgerBlue" Margin="-6"/>
+                <Grid Grid.Row="1" BackgroundColor="LightGray"/>
+                <StackLayout Grid.Row="1" BackgroundColor="LightGray" Orientation="Vertical" VerticalOptions="End">
+                    <Label Text="Sun Shine Care" FontSize="Large" HorizontalTextAlignment="Center"/>
+                    <Label Text="Job #101010" FontSize="Small" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Grid>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1.5*"/>
+                </Grid.ColumnDefinitions>
+                <controls:CircleImage Grid.Column="1" BackgroundColor="Transparent" Source="{x:OnPlatform Android=user.png, iOS= Logo.png}" Aspect="AspectFit" Margin="20"  BorderColor="Gray" BorderThickness="3" WidthRequest="{OnPlatform Android=100, iOS=1}"/>
+                <Grid Grid.Column="2" Margin="-15,30,0,0"  WidthRequest="40">
+                    <Label 
+                        Text="{x:Static fontAwesome:FontAwesomeIcons.Star}"
+                        FontFamily="{StaticResource FontAwesomeSolid}"
+                        TextColor="Yellow"/>
+                    <Button 
+                            BackgroundColor="Transparent">
+                    </Button>
+                </Grid>
+
+            </Grid>
+            
+            <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="StartAndExpand">
+                <!--<Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="3*" />
+                    <RowDefinition Height="3*" />
+                </Grid.RowDefinitions>-->
+                <Label Text="This week's appointments go here aaaaaaaaaaaaaaasadas" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="{x:Static fontAwesome:FontAwesomeIcons.CalendarAlt}"
+                                                           FontFamily="{StaticResource FontAwesomeRegular}"
+                                                           TextColor="Aqua"
+                                                           VerticalTextAlignment="Center"
+                                                           WidthRequest="20"/>
+                    <Label Text="09 Sept" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" />
+
+                    <Label
+                                                        Margin="30,0,0,0"
+                                                        Text="{x:Static fontAwesome:FontAwesomeIcons.Clock}"
+                                                        FontFamily="{StaticResource FontAwesomeSolid}" 
+                                                        TextColor="Aqua"
+                                                        VerticalTextAlignment="Center"
+                                                        WidthRequest="20"/>
+                    <Label Text="9:00-17:00" HorizontalOptions="StartAndExpand" />
+                </StackLayout>
+                <ScrollView>
+                    <StackLayout>
+                        <Label Text="Requirements" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Text="3D Design"/>
+                        <Label Text="3D Design"/>
+                        <Label Text="3D Design"/>
+                        <Label Text="3D Design"/>
+                        <Label Text="3D Design"/>
+                        <Label Text="3D Design"/>
+                        <Label Text="3D Design"/>
+                        <Label Text="3D Design"/>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="EndAndExpand" Grid.Row="2" HorizontalOptions="FillAndExpand">
+                <Button Text="Apply" VerticalOptions="Center" TextColor="White" BackgroundColor="DodgerBlue" FontSize="12" CornerRadius="20" HorizontalOptions="FillAndExpand" Margin="70,0,70,0"/>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

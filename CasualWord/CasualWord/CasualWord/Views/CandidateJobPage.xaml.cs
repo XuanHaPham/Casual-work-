@@ -28,5 +28,10 @@ namespace CasualWord.Views
             MyListHistory.ItemsSource = testList;
 
         }
-	}
+
+       async private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            await Navigation.PushAsync(new CandidateJobPost());
+        }
+    }
 }

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:view="clr-namespace:CasualWord.Views"
              x:Class="CasualWord.MainPage"
-             BackgroundColor="DodgerBlue"
+             BackgroundColor="White"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
             BarBackgroundColor="White"
@@ -20,7 +20,8 @@
             android:TabbedPage.BarSelectedItemColor="Blue"-->
     
     <ContentPage 
-			 Title="ThisWeek">
+        Icon="menu.png"
+			 Title="Menu">
         <ContentPage.Content>
             <StackLayout>
                 <Label Text="This week's appointments go here" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />

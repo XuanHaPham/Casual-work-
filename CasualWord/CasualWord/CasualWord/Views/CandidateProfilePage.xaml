@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CasualWord.Views.CandidateProfilePage"
+             Icon="{x:OnPlatform Android=user.png, iOS= user.png}"
              Title="Profile">
     <ContentPage.Content>
         <StackLayout>
