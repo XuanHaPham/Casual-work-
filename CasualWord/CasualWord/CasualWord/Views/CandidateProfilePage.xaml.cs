@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CasualWord.Views.ProfileOptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,26 @@ namespace CasualWord.Views
         public CandidateProfilePage()
         {
             InitializeComponent();
+        }
+
+        async private void Personal_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CandidatePersonalPage());
+        }
+
+        async private void Professional_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CandidateProfessionalPage());
+        }
+
+        async private void Feedback_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CandidateFeedbacksPage());
+        }
+
+        async private void Background_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CandidateBackgroundPage());
         }
     }
 }

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CasualWord.Views.ProfileOptions.CandidatePersonalPage"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:fontAwesome="clr-namespace:FontAwesome"
+             Title="Edit Profile">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Edit Profile"  TextColor="White" FontSize="Large"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="LightGray">
+                <Grid.RowDefinitions>
+                    <!--0-->
+                    <RowDefinition Height="2*"/>
+                    <!--1-->
+                    <RowDefinition Height="0.3*"/>
+                    <!--2-->
+                    <RowDefinition Height="0.6*"/>
+                    <!--3-->
+                    <RowDefinition Height="0.6*"/>
+                    <!--4-->
+                    <RowDefinition Height="0.6*"/>
+                    <!--5-->
+                    <RowDefinition Height="0.3*"/>
+                    <!--6-->
+                    <RowDefinition Height="0.6*"/>
+                    <!--7-->
+                    <RowDefinition Height="0.6*"/>
+                    <!--8-->
+                    <RowDefinition Height="0.3*"/>
+                    <!--9-->
+                    <RowDefinition Height="0.6*"/>
+                    <!--10-->
+                    <RowDefinition Height="0.6*"/>
+                    <!--11-->
+                    <RowDefinition Height="0.6*"/>
+                    <!--12-->
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout BackgroundColor="Transparent" Grid.Column="1" VerticalOptions="CenterAndExpand">
+                <controls:CircleImage  BackgroundColor="Transparent" Source="{x:OnPlatform Android=user.png, iOS= Logo.png}" Aspect="AspectFit" Margin="20"  BorderColor="Gray" BorderThickness="3" WidthRequest="{OnPlatform Android=100, iOS=1}"/>
+                <!--<Label HorizontalOptions="Center" Text="Olivial Bell" FontSize="Large"/>-->
+            </StackLayout>
+
+                </Grid>
+                
+                <!--topic-->
+
+                <StackLayout Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent">
+                    <Label Text="Information" Margin="10,0,0,0"/>
+                </StackLayout>
+                
+                <StackLayout Grid.Row="5" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent">
+                    <Label Text="Address" Margin="10,0,0,0"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="8" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent">
+                    <Label Text="Change Password" Margin="10,0,0,0"/>
+                </StackLayout>
+                
+                <!--Information-->
+                <StackLayout Grid.Row="2" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" BackgroundColor="White" Margin="0,0,0,-5">
+                    <Label Text="First Name" VerticalOptions="CenterAndExpand" Margin="10"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" BackgroundColor="White" Margin="0,0,0,-5">
+                    <Label Text="Last Name" VerticalOptions="CenterAndExpand" Margin="10"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" BackgroundColor="White" Margin="0,0,0,-5">
+                    <Label Text="Phone Number" VerticalOptions="CenterAndExpand" Margin="10"/>
+                </StackLayout>
+
+
+                <!--Address-->
+                <StackLayout Grid.Row="6" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" BackgroundColor="White" Margin="0,0,0,-5">
+                    <Label Text="Information" VerticalOptions="CenterAndExpand" Margin="10"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="7" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" BackgroundColor="White" Margin="0,0,0,-5">
+                    <Label Text="Information" VerticalOptions="CenterAndExpand" Margin="10"/>
+                </StackLayout>
+
+                <!--Change Password-->
+
+                <StackLayout Grid.Row="9" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" BackgroundColor="White" Margin="0,0,0,-5">
+                    <Label Text="Password" VerticalOptions="CenterAndExpand" Margin="10"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="10" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" BackgroundColor="White" Margin="0,0,0,-5">
+                    <Label Text="New Password" VerticalOptions="CenterAndExpand" Margin="10"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="11" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" BackgroundColor="White" Margin="0,0,0,-5">
+                    <Label Text="Retype Password" VerticalOptions="CenterAndExpand" Margin="10"/>
+                </StackLayout>
+
+
+                <!--button-->
+                <StackLayout VerticalOptions="EndAndExpand" Grid.Row="12" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                    <Button Text="Delete Account" VerticalOptions="Center" TextColor="White" BackgroundColor="DodgerBlue" FontSize="12" CornerRadius="20" HorizontalOptions="FillAndExpand" Margin="70,10,70,20"/>
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

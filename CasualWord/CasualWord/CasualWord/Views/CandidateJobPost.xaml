@@ -64,7 +64,7 @@
                     <Label
                                                         Margin="30,0,0,0"
                                                         Text="{x:Static fontAwesome:FontAwesomeIcons.Clock}"
-                                                        FontFamily="{StaticResource FontAwesomeSolid}" 
+                                                        FontFamily="{StaticResource FontAwesomeRegular}" 
                                                         TextColor="Aqua"
                                                         VerticalTextAlignment="Center"
                                                         WidthRequest="20"/>
@@ -86,7 +86,7 @@
             </StackLayout>
 
             <StackLayout VerticalOptions="EndAndExpand" Grid.Row="2" HorizontalOptions="FillAndExpand">
-                <Button Text="Apply" VerticalOptions="Center" TextColor="White" BackgroundColor="DodgerBlue" FontSize="12" CornerRadius="20" HorizontalOptions="FillAndExpand" Margin="70,0,70,0"/>
+                <Button Text="Apply" VerticalOptions="Center" TextColor="White" BackgroundColor="DodgerBlue" FontSize="12" CornerRadius="20" HorizontalOptions="FillAndExpand" Margin="70,10,70,20"/>
             </StackLayout>
         </Grid>
     </ContentPage.Content>
