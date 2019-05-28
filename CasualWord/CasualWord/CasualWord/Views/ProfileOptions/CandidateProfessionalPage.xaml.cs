@@ -12,13 +12,11 @@ namespace CasualWord.Views.ProfileOptions
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class CandidateProfessionalPage : ContentPage
-	{
-
+    {
         public ObservableCollection<int> testList;
         public CandidateProfessionalPage ()
 		{
 			InitializeComponent ();
-
             testList = new ObservableCollection<int>();
             testList.Add(1);
             testList.Add(1);
@@ -27,6 +25,12 @@ namespace CasualWord.Views.ProfileOptions
             testList.Add(1);
             listView.ItemsSource = testList;
             listView1.ItemsSource = testList;
+
         }
-	}
+
+        async private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            await Navigation.PushAsync(new QualificationPage());
+        }
+    }
 }

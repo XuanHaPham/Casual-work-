@@ -45,7 +45,7 @@
                                 Text="{x:Static fontAwesome:FontAwesomeIcons.GreaterThan}"
                                 FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Large"/>
                     </StackLayout>
-                    <Frame Padding="0.25,1,0.25,0" Margin="-5,0,0,5" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" HeightRequest="1" WidthRequest="400" HasShadow="False" OutlineColor="LightGray" BackgroundColor="LightGray"/>
+                    <Frame Padding="0.25,0.5,0.25,0" Margin="-5,0,0,5" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" HeightRequest="1" WidthRequest="400" HasShadow="False" OutlineColor="LightGray" BackgroundColor="LightGray"/>
                 </StackLayout>
                 <Button Grid.Row="0" VerticalOptions="Fill" BorderWidth="1" BackgroundColor="Transparent" Clicked="Personal_Clicked"/>
 
@@ -56,7 +56,7 @@
                                 Text="{x:Static fontAwesome:FontAwesomeIcons.GreaterThan}"
                                 FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Large"/>
                     </StackLayout>
-                    <Frame Padding="0.25,1,0.25,0" Margin="-5,0,0,5" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" HeightRequest="1" WidthRequest="400" HasShadow="False" OutlineColor="LightGray" BackgroundColor="LightGray"/>
+                    <Frame Padding="0.25,0.5,0.25,0" Margin="-5,0,0,5" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" HeightRequest="1" WidthRequest="400" HasShadow="False" OutlineColor="LightGray" BackgroundColor="LightGray"/>
                 </StackLayout>
                 <Button Grid.Row="1" VerticalOptions="Fill" BorderWidth="1" BackgroundColor="Transparent" Clicked="Professional_Clicked"/>
                 
@@ -68,7 +68,7 @@
                                 Text="{x:Static fontAwesome:FontAwesomeIcons.GreaterThan}"
                                 FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Large"/>
                     </StackLayout>
-                    <Frame Padding="0.25,1,0.25,0" Margin="-5,0,0,5" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" HeightRequest="1" WidthRequest="400" HasShadow="False" OutlineColor="LightGray" BackgroundColor="LightGray"/>
+                    <Frame Padding="0.25,0.5,0.25,0" Margin="-5,0,0,5" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" HeightRequest="1" WidthRequest="400" HasShadow="False" OutlineColor="LightGray" BackgroundColor="LightGray"/>
                 </StackLayout>
                 <Button Grid.Row="2" VerticalOptions="Fill" BorderWidth="1" BackgroundColor="Transparent" Clicked="Background_Clicked"/>
                 
@@ -80,7 +80,7 @@
                                 Text="{x:Static fontAwesome:FontAwesomeIcons.GreaterThan}"
                                 FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Large"/>
                     </StackLayout>
-                    <Frame Padding="0.25,1,0.25,0" Margin="-5,0,0,5" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" HeightRequest="1" WidthRequest="400" HasShadow="False" OutlineColor="LightGray" BackgroundColor="LightGray"/>
+                    <Frame Padding="0.25,0.5,0.25,0" Margin="-5,0,0,5" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" HeightRequest="1" WidthRequest="400" HasShadow="False" OutlineColor="LightGray" BackgroundColor="LightGray"/>
                 </StackLayout>
                 <Button Grid.Row="3" VerticalOptions="Fill" BorderWidth="1" BackgroundColor="Transparent"/>
                 
@@ -92,7 +92,7 @@
                                 Text="{x:Static fontAwesome:FontAwesomeIcons.GreaterThan}"
                                 FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Large"/>
                     </StackLayout>
-                    <!--<Frame Padding="0.25,1,0.25,0" Margin="-5,0,0,5" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" HeightRequest="1" WidthRequest="400" HasShadow="False" OutlineColor="LightGray" BackgroundColor="LightGray"/>-->
+                    <!--<Frame Padding="0.25,0.5,0.25,0" Margin="-5,0,0,5" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" HeightRequest="1" WidthRequest="400" HasShadow="False" OutlineColor="LightGray" BackgroundColor="LightGray"/>-->
                 </StackLayout>
                 <Button Grid.Row="4" VerticalOptions="Fill" BorderWidth="1" BackgroundColor="Transparent" Clicked="Feedback_Clicked"/>
             </Grid>

@@ -3,10 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CasualWord.Views.ProfileOptions.CandidateFeedbacksPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Horizontal" Padding="0,10,0,10">
+            <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" WidthRequest="40">
+                <Label Text="101" TextColor="Blue" HorizontalOptions="StartAndExpand" FontAttributes="Bold" FontSize="Medium"/>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+                <Label Text="Sun Sunshine Chilcare" FontSize="Medium"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Image Source="user.png" WidthRequest="20"/>
+                    <Label Text="today" FontSize="Small"/>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
